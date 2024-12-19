@@ -117,7 +117,22 @@ The default inputs are a image (.jpg) and a dance video (.mp4). The default outp
 
 
 Some key parameters in the `.yaml` configuration file are described as follows. For example, users can adjust the `max_frames` or `sampling interval` of the dance video to generate videos of varying durations or speeds.
-- `max_frames`: Number of frames in the generated video (fps: 8).
+- `max_frames`: Number of frames (default as 32) in the generated video (fps: 8).
+    - If you want to generage longer video with more frames, you should modify
+        - `max_frames` as the number of frames
+        - `seq_len` in `UNet` as the number of frames + 1
+    - We take 96 frames as an example, and the config should be:
+        ```python
+        {
+            max_frames: 96   # 1. modify `max_frames` as the number of frames (e.g. 96)
+            ......
+            UNet: {
+                ......
+                'use_sim_mask': False,
+                'seq_len': 97, # 2. modify `seq_len` in `UNet` as the number of frames + 1  (e.g. 97 = 96 + 1)
+            }
+        }
+        ```
 - `round`: The number of times each test case is generated.
 - `test_list_path`: The input paths for all test cases, for example:
     ```python
