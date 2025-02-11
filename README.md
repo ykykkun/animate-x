@@ -43,6 +43,7 @@ This repository is the official implementation of paper "Animate-X: Universal Ch
 
 
 ## &#x1F4CC; Updates
+* [2025.02.11] 🔥 Animate-X has been accepted by ICLR 2025!
 * [2024.12.20] 🔥 We release our [Animate-X](https://github.com/antgroup/animate-x) inference codes.
 * [2024.12.10] 🔥 We release our [Animate-X CKPT](https://huggingface.co/Shuaishuai0219/Animate-X) checkpoints.
 * [2024.10.14] 🔥 Our [paper](https://arxiv.org/abs/2410.10306) is in public on arxiv.
@@ -168,7 +169,7 @@ If you find this codebase useful for your research, please use the following ent
 @article{AnimateX2025,
   title={Animate-X: Universal Character Image Animation with Enhanced Motion Representation},
   author={Tan, Shuai and Gong, Biao and Wang, Xiang and Zhang, Shiwei and Zheng, Dandan and Zheng, Ruobing and Zheng, Kecheng and Chen, Jingdong and Yang, Ming},
-  journal={arXiv preprint arXiv:2410.10306},
+  journal={ICLR 2025},
   year={2025}
 }
 
