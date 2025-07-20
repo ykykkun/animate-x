@@ -94,7 +94,7 @@ numpy==1.26.3
 omegaconf==2.3.0
 onnxruntime==1.18.0
 open-clip-torch==2.24.0
-opencv-python==4.5.3.56
+opencv-python==4.10
 opencv-python-headless==4.9.0.80
 orderedmultidict==1.0.1
 orjson==3.9.10
