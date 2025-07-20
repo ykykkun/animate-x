@@ -172,7 +172,7 @@ urllib3==2.1.0
 uvicorn==0.26.0
 wcwidth==0.2.13
 websockets==11.0.3
-xformers==0.0.23
+xformers==0.0.22.post7  # Downgraded to be compatible with torch 2.1.0
 yarl==1.9.4
 zipp==3.17.0
 zope.interface==6.2
